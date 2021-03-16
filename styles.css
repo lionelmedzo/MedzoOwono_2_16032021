@@ -1,0 +1,73 @@
+
+.entete {
+    display: flex;              /* Transformation en flexbox */
+       
+}
+nav{
+    
+    padding-left: 1300px;
+}
+
+.menu{
+    display: flex;              /* Transformation en flexbox */
+    padding:0;                  /* Suppression des marges internes */
+    justify-content: flex-end;   /* Alignements des liens dans le menu */
+}
+.menu li {
+    list-style-type: none ;       /* Suppression des puces */
+}
+
+.menu a {
+    display:block;                /* Transformation en block */
+    min-width: 120px;             /* Largeur minimale des liens */
+}
+
+.menu a:hover { /* survo des liens*/
+
+    color: #0065FC;
+    
+}
+
+.hebergement
+{
+    
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px 2em;
+    margin-left: 60px ;
+    background-color: grey;
+}
+
+.marseille1, .marseille4{
+    margin-left: 10px;
+}
+
+
+section{
+    border: 1px solid red;
+    width: 900px;
+    height: auto;
+    display: block;
+}
+
+
+button{
+    background-color: #0065FC;
+}
+
+
+
+#populaire{
+    float:left;
+    
+
+    /*display: grid;
+    height: 200px;
+    grid-template-columns: 200px;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 20px;*/
+    
+}
+
+
