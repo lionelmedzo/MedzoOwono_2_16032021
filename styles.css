@@ -70,4 +70,34 @@ button{
     
 }
 
+/*---------------FOOTER--------------*/
 
+.fin{
+	width: 1200px;
+	
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;/* tous aligner en haut*/
+	font-size: 20px;
+	padding: 0px 0 0px;
+} 
+footer{		
+	width: 100%;
+	background:  #F2F2F2;	
+}
+
+
+.foot1, .foot2, .foot3{
+	width:33%;
+	margin: 0 30px;
+}
+
+h3{
+	margin-left: 11%;
+	font-size: 20px;
+}
+li{
+	list-style-type: none;
+	
+}
+/*----------------------------------------------------------------------*/
