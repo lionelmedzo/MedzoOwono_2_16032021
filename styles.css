@@ -27,48 +27,100 @@ nav{
     color: #0065FC;
     
 }
+/*------------------- Section Hebergement et populaire------------------*/
+.contenaire{
+	width: 100%;
+	display: flex;	
+	flex-wrap:wrap;
+	justify-content: space-around;
 
-.hebergement
-{
-    
-
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 10px 2em;
-    margin-left: 60px ;
-    background-color: grey;
 }
 
-.marseille1, .marseille4{
-    margin-left: 10px;
+.hebergement{
+	background-color: yellow;
+	border-radius: 2em;
+	width: 50%;
+	
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap; 
+	justify-content: space-around;
+
+	
+}
+
+.populaire{
+	background-color: red;
+	border-radius: 2em;
+	width: 25%;
+	height: auto;
+	display:flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
 }
 
 
-section{
-    border: 1px solid red;
-    width: 900px;
-    height: auto;
-    display: block;
+@media (max-width: 2400px) { 			/* si la taille de l'ecran est inferieur a XX px mettre en colonne les elements appelé.*/
+  .contenaire {
+    flex-direction: column-reverse;
+   
+    align-content: center;
+  }
+}
+@media (max-width: 2400px) {
+	.populaire{
+		width: 100%;
+
+	}
+}
+@media (max-width: 2400px) {
+	.rubrique {
+		text-align: center;
+
+
+	}
+}
+@media (max-width: 2400px) {
+	 .hebergement{
+		width: 100%;
+
+
+	}
+}
+
+@media (max-width: 2400px) {
+	 .marseille{
+
+		width: 100%;
+		
+
+	}
 }
 
 
-button{
-    background-color: #0065FC;
+.marseille{
+	margin: auto;
+	background-color: white;
+	border-radius: 1em;
+	
+
 }
 
+.pop{
+	margin: auto;
+	background-color: white;
+	width: 70%;
+	
 
-
-#populaire{
-    float:left;
-    
-
-    /*display: grid;
-    height: 200px;
-    grid-template-columns: 200px;
-    grid-template-rows: repeat(3, 1fr);
-    row-gap: 20px;*/
-    
 }
+
+.rubrique{
+	width: 100%;
+}
+
 
 /*---------------FOOTER--------------*/
 
