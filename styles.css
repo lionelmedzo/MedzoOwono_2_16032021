@@ -28,8 +28,18 @@ nav{
     
 }
 /*------------------- Section Hebergement et populaire------------------*/
+
+
+body{
+	background-color: #999;
+	display: block;
+	font-family: Raleway	
+}
+
+
 .contenaire{
 	width: 100%;
+	height: auto;
 	display: flex;	
 	flex-wrap:wrap;
 	justify-content: space-around;
@@ -39,9 +49,11 @@ nav{
 .hebergement{
 	background-color: yellow;
 	border-radius: 2em;
-	width: 50%;
-	
+	width: 72%;
 	height: auto;
+
+	
+	
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap; 
@@ -68,11 +80,24 @@ nav{
     flex-direction: column-reverse;
    
     align-content: center;
+
   }
 }
 @media (max-width: 2400px) {
 	.populaire{
 		width: 100%;
+
+	}
+}
+
+@media (max-width: 2400px) {
+	 .hebergement{
+
+		width: 100%;
+		flex-flow: row wrap;
+		
+
+
 
 	}
 }
@@ -83,18 +108,17 @@ nav{
 
 	}
 }
-@media (max-width: 2400px) {
-	 .hebergement{
-		width: 100%;
 
-
-	}
-}
 
 @media (max-width: 2400px) {
 	 .marseille{
+	 	
+	 	min-width: 100%;
 
-		width: 100%;
+		
+
+		
+
 		
 
 	}
@@ -102,23 +126,70 @@ nav{
 
 
 .marseille{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 	margin: auto;
 	background-color: white;
 	border-radius: 1em;
+	width: 23%;
+	height: 15%
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: 5em;
+	line-height: 0em;
+
+	
+
+
+	
+	
+
 	
 
 }
 
 .pop{
+	display: flex;
+	justify-content: center;
 	margin: auto;
 	background-color: white;
 	width: 70%;
+	margin-top: 1em;
+	margin-bottom: 1em;
+
 	
 
 }
 
 .rubrique{
 	width: 100%;
+}
+
+.photo{
+	border-radius: 1em;
+	width: 100%;
+
+
+}
+.bloc-ecriture{
+	display: flex;
+	flex-direction: column;
+
+}
+
+
+
+.fas{
+	color: blue;
+	font-size:30px;
+
+	}
+
+.etoile{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 }
 
 
