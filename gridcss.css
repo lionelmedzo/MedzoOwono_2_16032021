@@ -1,0 +1,50 @@
+body{
+	background-color: #999;
+	display: block;
+	font-family: Raleway	
+}
+
+.grid> div{
+	border:solid 1px black;
+	background-color: blue;
+
+
+}
+.grid{
+	display: grid;
+	grid-template-columns:1fr 1fr 1fr 1fr ; /* 1 fr 5fr 1fr       20% 50% 20%*/
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+	grid-column-gap: 20px;
+	grid-row-gap: 20px;
+}
+.children{
+	grid-column-start: 1;
+	grid-row-start: 1;
+	grid-row-end: span 2;
+	height: 50%;
+	align-items: center;
+}
+
+.children2{
+	grid-column-start: 2;
+	grid-row-start:1;
+}
+
+.children3{
+	grid-column-start: 3;
+	grid-row-start: 1;
+	grid-row-end: span 2;
+}
+
+.children4{
+	grid-column-start: 4;
+	grid-row-start: 1;
+}
+.children5{
+	grid-column-start:  2;
+	grid-row-start: 2;
+}
+.children6{
+	grid-column-start: 4;
+	grid-row-start: 2;
+}
