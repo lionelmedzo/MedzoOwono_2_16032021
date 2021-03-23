@@ -7,27 +7,31 @@ body{
 .grid> div{
 	border:solid 1px black;
 	background-color: blue;
+    border-radius: 1em;
 
 
 }
 .grid{
+    
 	display: grid;
-	grid-template-columns:1fr 1fr 1fr 1fr ; /* 1 fr 5fr 1fr       20% 50% 20%*/
-	grid-template-rows: 1fr 1fr 1fr 1fr;
+	grid-template-columns:1fr 1fr 1fr 1fr ; 
+	grid-template-rows: 2fr 1fr 2fr 1fr;
 	grid-column-gap: 20px;
 	grid-row-gap: 20px;
+   
 }
 .children{
 	grid-column-start: 1;
 	grid-row-start: 1;
 	grid-row-end: span 2;
-	height: 50%;
-	align-items: center;
+	
+	
 }
 
 .children2{
 	grid-column-start: 2;
 	grid-row-start:1;
+    
 }
 
 .children3{
@@ -48,3 +52,21 @@ body{
 	grid-column-start: 4;
 	grid-row-start: 2;
 }
+
+.activiteimage{   
+    height: 80%;  
+}
+.test{
+    height: 100%;
+    width: 100%;
+    
+    object-fit:cover ;
+    border-radius: 1em;
+    
+}
+
+.titreactivite{
+    margin-top: 5%;
+}
+
+
