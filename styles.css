@@ -1,25 +1,23 @@
 
 .entete {
-    display: flex;              /* Transformation en flexbox */
-       
+    display: flex;              /* Transformation en flexbox */      
 }
 nav{
     
-    padding-left: 1300px;
+    padding-left: 50%;
 }
 
 .menu{
     display: flex;              /* Transformation en flexbox */
-    padding:0;                  /* Suppression des marges internes */
     justify-content: flex-end;   /* Alignements des liens dans le menu */
 }
 .menu li {
     list-style-type: none ;       /* Suppression des puces */
 }
 
-.menu a {
-    display:block;                /* Transformation en block */
-    min-width: 120px;             /* Largeur minimale des liens */
+.menu li a{
+	width: 10em;
+	display:block;                
 }
 
 .menu a:hover { /* survo des liens*/
@@ -31,159 +29,185 @@ nav{
 
 
 body{
-	background-color: #999;
+	
 	display: block;
-	font-family: Raleway	
+	font-family: Raleway;
+	margin-left:5%;
+		
 }
 
 
-.contenaire{
-	width: 100%;
-	height: auto;
-	display: flex;	
-	flex-wrap:wrap;
-	justify-content: space-around;
 
+.rubrique, .plus {
+	text-align: left;
+	width: 100%
+}
+.contenaire{
+	display:flex;
+	flex-wrap:wrap;
+	flex-direction: row;
+	justify-content: space-around;
 }
 
 .hebergement{
-	background-color: yellow;
-	border-radius: 2em;
-	width: 72%;
-	height: auto;
-
-	
-	
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap; 
+	display:flex;
+	flex-wrap:wrap;
 	justify-content: space-around;
+	background-color: #F2F2F2;
+	width: 60%;
+	height: 70%;
+	border-radius: 1em 1em 1em 1em;
+	border-color: black;
 
-	
 }
+.marseille{
+	padding:0% 1%;
+	background-color: white;
+	height: 30%;
+	width: 27.5%;
+	margin-bottom: 3%;
+
+	border-radius: 1em 1em 1em 1em;
+	box-shadow:  8px 8px 6px #F2F2F2;
+	
+
+}
+.photo{
+	height: 40%;
+	width: 100%;
+	border-radius: 1em 1em 0em 0em;
+	margin-top: -.5em;
+}
+.bloc-ecriture{
+	margin-top: -1em;
+}
+.bloc-ecriture p{
+	margin-top: -1em;
+}
+.etoile{
+	margin-top: -.5em;
+	padding-bottom: 1em;
+}
+.fas{
+	color: blue;
+	font-size:15px;
+
+}
+
 
 .populaire{
-	background-color: red;
-	border-radius: 2em;
-	width: 25%;
-	height: auto;
+	background-color: #F2F2F2;
 	display:flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	align-items: center;
+	flex-wrap:wrap;
+	flex-direction: column;	
+	width: 33%;
+	height: 85%;
+	border-radius: 1em 1em 1em 1em;
+	margin-bottom: 1em;
+
+
+}
+.pop{
+	padding:0% 1%;
+	background-color: white;
+	height: 70%;
+	margin-bottom: 10%;
+	margin-left: 1em;
+	margin-right: 1em;
+	border-radius: 1em 1em 1em 1em;
+	box-shadow:  8px 8px 6px #F2F2F2;
+
+}
+.photopop{
+	height: 90%;
+	width: 58%;
+	float:left;
+	margin-bottom: 1em;
+	margin-right: 1em;
+	border-radius: 1em 0em 0em 1em;
 }
 
+.bloc-ecrituredroit{
+	margin-top: 1em;
+	
 
-@media (max-width: 2400px) { 			/* si la taille de l'ecran est inferieur a XX px mettre en colonne les elements appelé.*/
+}
+.bloc-ecrituredroit p{
+	margin-top: -1em;
+}
+
+.etoilepop{
+	
+	padding-left: 13em;
+
+}
+
+/*------------------------@Media-------------------*/
+
+@media (max-width: 700px) { 			
   .contenaire {
+  	
     flex-direction: column-reverse;
    
     align-content: center;
 
   }
 }
-@media (max-width: 2400px) {
+@media (max-width: 700px) {
 	.populaire{
 		width: 100%;
+		height: 80%;
+		margin-bottom: 1em;
+
+	}
+	.pop{
+		height: 90%;
+		width: 94%;
+	}
+	.photopop{
+		height: 80%;
+		width: 40%;
+	}
+	
+
+	.etoilepop{
+	
+	padding-top:  4em;
 
 	}
 }
 
-@media (max-width: 2400px) {
+@media (max-width: 700px) {
 	 .hebergement{
 
 		width: 100%;
 		flex-flow: row wrap;
-		
-
-
+		margin-bottom: 1em;
 
 	}
 }
 
-@media (max-width: 2400px) {
+@media (max-width: 700px) {
 	.rubrique {
 		text-align: center;
-
-
 	}
+	
 }
 
 
-@media (max-width: 2400px) {
+@media (max-width: 700px) {
 	 .marseille{
 	 	
-	 	min-width: 100%;
+	 	width: 94%; 	
+	}
+	.photo{		
+		width: 50%;	
 	}
 }
-
-
-.marseille{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	margin: auto;
-	background-color: white;
-	border-radius: 1em;
-	width: 23%;
-	
-	margin-top: 1em;
-	margin-bottom: 1em;
-	margin-left: 5em;
-	line-height: 0em;
-
-	
-
-
-	
-	
-
-	
-
-}
-
-.pop{
-	display: flex;
-	justify-content: center;
-	margin: auto;
-	background-color: white;
-	width: 70%;
-	margin-top: 1em;
-	margin-bottom: 1em;
-
-	
-
-}
-
-.rubrique{
-	width: 100%;
-}
-
-.photo{
-	border-radius: 1em;
-	width: 100%;
-
-
-}
-.bloc-ecriture{
-	display: flex;
-	flex-direction: column;
-
-}
-
-
-
-.fas{
-	color: blue;
-	font-size:30px;
-
-	}
-
 .etoile{
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
+	justify-content: left;
 }
 
 
