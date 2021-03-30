@@ -24,7 +24,74 @@ nav{
 
     color: #0065FC;
     
+}/*------------------ Section Filtre------------------------------------*/
+.filtre{
+	display: flex;
+    flex-wrap: wrap;
+	margin-bottom: 1em;
+	
 }
+.filtreh2{
+	display: flex;
+    align-items: center;
+	margin-top: 0;
+	margin-right: 2em;
+	margin-bottom:1em;
+	margin-left: 0;   
+}
+
+.filtrebloc{
+	display: flex;
+    align-items: center;
+    margin-right: 2em;
+    border: 2px solid grey;
+    border-radius: 2em;
+    margin-bottom: 1em;
+    
+
+}
+
+.filtreimage{
+	display: flex;
+	background-color: #DEEBFF;
+	height: 3em;
+	width: 3em;
+	border-radius: 100%;
+	align-items: center;
+	justify-content: center;
+	margin-left: -.2em;
+}
+
+.filtretitre{
+	display: flex;
+	margin-right: 1em;
+	margin-left: 1em;
+	font-weight: bold;
+
+}
+fa-map-marker-alt{
+color: black;
+}
+.fas{
+	color: #0065FC;
+}
+
+@media (max-width: 700px) { 
+	.filtre{
+		flex-direction: column;
+		align-items: center;
+		
+	}
+
+	.filtreh2{
+		width: 100%;	
+		justify-content: center;
+	}
+	.filtrebloc{
+		width:50%;
+	}
+}
+/*------------------ ----------------------------------------------------*/
 /*------------------- Section Hebergement et populaire------------------*/
 
 
@@ -32,7 +99,9 @@ body{
 	
 	display: block;
 	font-family: Raleway;
-	margin-left:5%;
+	margin-left: 3em;
+   
+	
 		
 }
 
@@ -47,6 +116,7 @@ body{
 	flex-wrap:wrap;
 	flex-direction: row;
 	justify-content: space-around;
+	
 }
 
 .hebergement{
@@ -58,6 +128,7 @@ body{
 	height: 70%;
 	border-radius: 1em 1em 1em 1em;
 	border-color: black;
+	margin-left: -4em;
 
 }
 .marseille{
@@ -69,6 +140,7 @@ body{
 
 	border-radius: 1em 1em 1em 1em;
 	box-shadow:  8px 8px 6px #F2F2F2;
+	cursor: pointer;
 	
 
 }
@@ -89,7 +161,7 @@ body{
 	padding-bottom: 1em;
 }
 .fas{
-	color: blue;
+	
 	font-size:15px;
 
 }
@@ -116,6 +188,7 @@ body{
 	margin-right: 1em;
 	border-radius: 1em 1em 1em 1em;
 	box-shadow:  8px 8px 6px #F2F2F2;
+	cursor: pointer;
 
 }
 .photopop{
@@ -314,6 +387,7 @@ body{
 	height: 200px;
 	object-fit: cover; 
 	border-radius: 1em 1em 0 0;	
+	cursor: pointer;
 }
 .image4{
 	width: 100%;
@@ -321,6 +395,7 @@ body{
 	object-fit: cover; 
 	border-radius: 1em 1em 0 0;
 	justify-items: center;
+	cursor: pointer;
 }
 
 .image5{
@@ -329,6 +404,7 @@ body{
 	object-fit: cover; 
 	border-radius: 1em 1em 0 0;
 	justify-items: center;
+	cursor: pointer;
 }
 
 .image6{   
@@ -337,6 +413,7 @@ body{
 	height: 80%;
 	object-fit: cover; 
 	border-radius: 1em 1em 0 0;
+	cursor: pointer;
 	
 }
 .titreactivite{
