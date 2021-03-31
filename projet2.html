@@ -7,6 +7,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;600&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/384df6feb6.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="styles.css"/>
+        <link rel="stylesheet" href="responsive.css"/>
         
        
     </head>
@@ -14,8 +15,8 @@
 
         <header>
             <div class ="entete">
-                <p><a href="\Users\lmedzoowono\Desktop\Projet\Projet_2\images\logo\Reservia@3x.png"></p>
-                <img src="\Users\lmedzoowono\Desktop\Projet\Projet_2\images\logo\Reservia@3xmini.png"/></a>
+                <a href="images\logo\Reservia@3x.png">
+                <img src="images\logo\Reservia@3xmini.png"/></a>
                 <nav>
                     <ul class="menu">
                         <li>
@@ -39,7 +40,14 @@
 
             </div>
         </div>
-        <p><i class="fas fa-map-marker-alt"></i><input type="text" /><button>Rechercher</button> </p>
+        <div class="recherchebouton">
+            <div class="search">
+                <i class="fas fa-search"></i>
+            </div>
+            <input type="text" /><button class="bouton">Rechercher</button>
+        </div>
+        
+         
 
         <div class ="filtre">
             <h2 class="filtreh2"> Filtres</h2>
@@ -68,8 +76,15 @@
                 <div class="filtreimage">
                     <i class="fas fa-dog"></i>
                 </div>
-                <span class="filtretitre">Animaux autotirisés</span>
+                <span class="filtretitre">Animaux autorisés</span>
             </div>
+        </div>
+
+        <div class="resultat">
+            <div class="iconinfo">
+                <i class="fas fa-info"></i>
+            </div>
+            <span class="disponible">Plus de 500 logements sont disponibles dans cette ville</span>
         </div>
         
         <div class="contenaire">
@@ -77,10 +92,10 @@
             <div class="hebergement"><!-- conteneur 1--> 
                 <h1 class ="rubrique">Hebergements à Marseille</h1>           
                     <div class="marseille">          
-                        <p><img class ="photo" src="/Users/lmedzoowono/Desktop/Projet/Projet_2/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"/></p>
+                        <img class ="photo" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"/>
                         <div class="bloc-ecriture">
                             <h2>Auberge la Cannebière</h2>
-                            <p>Nuit à partir de  25€</p>
+                            <p>Nuit à partir de 25€</p>
                             <div class="etoile">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -93,10 +108,10 @@
                     </div>
     
                     <div class="marseille">    
-                        <p><img class ="photo" src="/Users/lmedzoowono/Desktop/Projet/Projet_2/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"/></p>
+                        <img class ="photo" src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"/>
                         <div class="bloc-ecriture">
-                            <h2>Auberge la cannebière</h2>
-                            <p>Nuit à partir de  25€</p>
+                            <h2>Hôtel du port</h2>
+                            <p>Nuit à partir de 52€</p>
                             <div class="etoile">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -109,10 +124,10 @@
                     </div>
     
                     <div class="marseille">   
-                        <p><img class ="photo" src="/Users/lmedzoowono/Desktop/Projet/Projet_2/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"/></p>
+                        <img class ="photo" src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"/>
                         <div class="bloc-ecriture">
-                            <h2>Auberge la cannebière</h2>
-                            <p>Nuit à partir de  25€</p> 
+                            <h2>Hôtel les mouettes</h2>
+                            <p>Nuit à partir de 76€</p> 
                             <div class="etoile">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -124,10 +139,10 @@
                     </div>
     
                     <div class="marseille">   
-                        <p><img class ="photo" src="/Users/lmedzoowono/Desktop/Projet/Projet_2/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"/></p>
+                        <img class ="photo" src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"/>
                         <div class="bloc-ecriture">
-                            <h2>Auberge la cannebière</h2>
-                            <p>Nuit à partir de  25€</p>
+                            <h2>Hôtel de la mer</h2>
+                            <p>Nuit à partir de 46€</p>
                             <div class="etoile">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -139,10 +154,10 @@
                     </div>
     
                     <div class="marseille">    
-                        <p><img class ="photo" src="/Users/lmedzoowono/Desktop/Projet/Projet_2/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"/></p>
+                        <img class ="photo" src="/Users/lmedzoowono/Desktop/Projet/Projet_2/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"/>
                         <div class="bloc-ecriture">
-                            <h2>Auberge la cannebière</h2>
-                            <p>Nuit à partir de  25€</p> 
+                            <h2>Auberge le Panier</h2>
+                            <p>Nuit à partir de  23€</p> 
                             <div class="etoile">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -154,10 +169,10 @@
                     </div>
     
                     <div class="marseille">   
-                        <p><img class ="photo" src="/Users/lmedzoowono/Desktop/Projet/Projet_2/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"/></p>
+                        <img class ="photo" src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"/>
                         <div class="bloc-ecriture">
-                            <h2>Auberge la cannebière</h2>
-                            <p>Nuit à partir de  25€</p> 
+                            <h2>Hôtel chez Amina</h2>
+                            <p>Nuit à partir de 96€</p> 
                             <div class="etoile">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -173,7 +188,7 @@
             <div class ="populaire"><!-- conteneur 2-->
                 <h1 class="rubrique">Les plus populaires</h1>
                     <div class="pop">    
-                        <p><img class ="photopop" src="/Users/lmedzoowono/Desktop/Projet/Projet_2/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"/></p>
+                        <img class ="photopop" src="/Users/lmedzoowono/Desktop/Projet/Projet_2/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"/>
                         <div class="bloc-ecrituredroit">
                             <h2>Hôtel Le soleil du matin</h2>
                             <p>Nuit à partir de  128€</p>
@@ -187,10 +202,10 @@
                         </div> 
                     </div>
                     <div class="pop">    
-                        <p><img class ="photopop" src="/Users/lmedzoowono/Desktop/Projet/Projet_2/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"/></p> 
+                        <img class ="photopop" src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"/> 
                         <div class="bloc-ecrituredroit">
-                            <h2>Hôtel Le soleil du matin</h2>
-                            <p>Nuit à partir de  128€</p>
+                            <h2>Au coeur de l'eau Chambres d'hôtel</h2>
+                            <p>Nuit à partir de 71€</p>
                             <div class="etoilepop">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -201,10 +216,10 @@
                         </div> 
                     </div>
                     <div class="pop">    
-                        <p><img class ="photopop" src="/Users/lmedzoowono/Desktop/Projet/Projet_2/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"/></p>
+                        <img class ="photopop" src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"/>
                         <div class="bloc-ecrituredroit">
-                            <h2>Hôtel Le soleil du matin</h2>
-                            <p>Nuit à partir de  128€</p>
+                            <h2>Hôtel tout Bleu et Blanc</h2>
+                            <p>Nuit à partir de 68€</p>
                             <div class="etoilepop">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -222,7 +237,7 @@
         <div class="grid">
             <div class="children"> 
                 <div class=activiteimage>
-                    <a href=""><img class="image13" src="/Users/lmedzoowono/Desktop/Projet/Projet_2/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"/></a>
+                    <img class="image13" src="/Users/lmedzoowono/Desktop/Projet/Projet_2/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"/>
                 </div>
                 <div class="titreactivite">
                     <h3> Vieux Port</h3>
