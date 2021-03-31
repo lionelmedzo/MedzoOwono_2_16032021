@@ -24,6 +24,10 @@ nav{
 
     color: #0065FC;
 }
+.clic{
+	text-decoration: none;
+	color: inherit;
+}
   /*---------------------------------------------------*/
   .recherchebouton{
 	display: flex;
@@ -265,6 +269,8 @@ body{
 	flex-direction: row;
 	justify-content: left;
 }
+
+
 /*----------------------------------------------------------------------*/
 /*----------------------------Activité-----------------------------------*/
 
