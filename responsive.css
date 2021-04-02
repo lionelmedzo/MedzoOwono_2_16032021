@@ -1,10 +1,39 @@
 /*------------------------Entete-------------------*/
-@media (max-width: 700px) { 
-    .menu{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction:row ;
+@media (max-width: 800px) { 
+    .entete{
+        display: grid;
+        grid-template-columns:1fr 2fr 1fr; 
+        grid-template-rows: 1fr  1fr ;
+        row-gap:20%;
+
     }
+    .logo{
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
+    .menu{
+        grid-column-start: 1;
+        grid-column-end: span 2;
+        grid-row-start: 2;
+        
+       
+
+    }
+    .inscritpiton{
+        grid-column-start: 3;
+        grid-row-start: 1;
+		text-align: center;
+		margin-top: 1em;
+        
+    }
+	.lien2{
+		margin-left: 1em;
+	}
+	
+    
+    
+
+    
 } 
 /*------------------------Filtre-------------------*/
 @media (max-width: 700px) { 

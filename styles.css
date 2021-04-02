@@ -1,29 +1,55 @@
 
-.entete {
-    display: flex;              /* Transformation en flexbox */      
+body{
+	
+	display: block;
+	font-family: 'Raleway', sans-serif;
+	margin-left: 3em;
+   
+	
+		
 }
-nav{
-    
-    padding-left: 50%;
+.entete {
+	 
+	display: grid;
+	grid-template-columns:1fr 2fr 2fr 1fr; 
+	grid-template-rows: 1fr;
+
+
+
+}
+.logo{
+	grid-column-start: 1;
+	grid-row-start: 1;
 }
 
 .menu{
-    display: flex;              /* Transformation en flexbox */
-    justify-content: flex-end;   /* Alignements des liens dans le menu */
-}
-.menu li {
-    list-style-type: none ;       /* Suppression des puces */
-}
+	grid-column-start: 3;
+	grid-row-start: 1;
+	margin-top: 1em;
 
-.menu li a{
-	width: 10em;
-	display:block;
-	text-decoration: none;             
 }
-
-.menu a:hover { /* survo des liens*/
-
-    color: #0065FC;
+.inscritpiton{
+	grid-column-start: 4;
+	grid-row-start: 1;
+	margin-top: 1em;
+	
+}
+.lien1{
+	
+	padding: 2em;
+	text-decoration: none;
+	color:#0065FC;
+}
+.lien2{
+	
+	text-decoration: none;
+	color:#0065FC;
+	}
+.lien3{
+	
+	text-decoration: none;
+	color:#0065FC;
+	
 }
 .clic{
 	text-decoration: none;
@@ -37,21 +63,26 @@ nav{
     
     border-radius: 2em;
     margin-bottom: 1em;
+	
   }
 .search{
 	border-radius: 1em 0 0  1em;
-	background-color:  #0065FC;
-	padding-left: 1em;
-	padding-right: 1em;
+	background-color:  #F2F2F2;
+	padding: .5em .5em;
+	
+	
 	
   }
 .bouton{
 	border-radius: 0 1em 1em 0;
 	background-color:  #0065FC;
-	padding-left: 1em;
-	padding-right: 1em;
+	padding: .5em .5em;
+	
 	
   
+}
+input{
+	min-height: 25px;
 }
 
 
@@ -139,15 +170,7 @@ nav{
 /*------------------- Section Hebergement et populaire------------------*/
 
 
-body{
-	
-	display: block;
-	font-family: Raleway;
-	margin-left: 3em;
-   
-	
-		
-}
+
 
 
 
@@ -246,6 +269,10 @@ body{
 	border-radius: 1em 0em 0em 1em;
 	object-fit: cover;
 }
+.fa-chart-line{
+	margin-left: 3em;
+	size: 20%;
+}
 
 .bloc-ecrituredroit{
 	margin-top: 1em;
@@ -269,6 +296,9 @@ body{
 	display: flex;
 	flex-direction: row;
 	justify-content: left;
+}
+.fa-star[data-etoile]{
+	color:#d9d9d9 ;
 }
 
 
