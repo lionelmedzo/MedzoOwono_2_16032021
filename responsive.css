@@ -141,7 +141,7 @@
       }
   }
 /*------------------------------------------ACTIVITE----------------------------*/
-  @media  (max-width:900px){
+@media  (max-width:900px){
 	
 	.grid{
 		
@@ -215,13 +215,14 @@
 		
 		
 	}
-	.titreactivite{
-		margin-top: 2em;
+	.titreactivite,.titreactivite3{
+		margin-top: 1em;
 		margin-left: 1em;
 	}
 	.titreactivite2,.titreactivite4, .titreactivite5, .titreactivite6{
 		margin-left: 1em;
 	}
+	
 	.image2{
 		width: 100%;
 		max-height: 90%;
