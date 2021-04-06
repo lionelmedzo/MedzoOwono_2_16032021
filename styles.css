@@ -3,7 +3,7 @@ body{
 	
 	display: block;
 	font-family: 'Raleway', sans-serif;
-	margin-left: 3em;
+	
    
 	
 		
@@ -56,6 +56,21 @@ body{
 .clic{
 	text-decoration: none;
 	color: inherit;
+}
+.clicmarseille{
+	text-decoration: none;
+	color: inherit;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: space-around;
+	width: 30%;
+}
+
+.clicpop{
+	display: flex;
+	text-decoration: none;
+	color: inherit;
+	max-height: 100%;
 }
 /*---------------------------------------------------*/
 .centre-ville{
@@ -203,14 +218,13 @@ input{
 	height: 70%;
 	border-radius: 1em 1em 1em 1em;
 	border-color: black;
-	margin-left: -3em; 
+	
 
 }
 .marseille {
 	
 	background-color: white;
-	max-height: 235px;
-	width: 30%;
+	max-height: 235px;	
 	margin-bottom: 1em;
 	border-radius: 1em 1em 1em 1em;
 	box-shadow:  8px 8px 6px #F2F2F2;
@@ -253,7 +267,7 @@ input{
 .pop{
 	
 	background-color: white;
-	height: 70%;
+	
 	margin-bottom: 10%;
 	margin-left: 1em;
 	margin-right: 1em;
@@ -274,7 +288,7 @@ input{
 }
 .fa-chart-line{
 	
-	font-size: 30px;
+	font-size: 20px;
 	margin-left: 1em;
 }
 
