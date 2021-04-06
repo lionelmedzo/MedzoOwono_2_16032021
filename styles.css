@@ -8,6 +8,7 @@ body{
 	
 		
 }
+/*------------------Header-------------------*/
 .entete {
 	 
 	display: grid;
@@ -49,13 +50,19 @@ body{
 	
 	text-decoration: none;
 	color:#0065FC;
+	font-weight: bold;
 	
 }
 .clic{
 	text-decoration: none;
 	color: inherit;
 }
-  /*---------------------------------------------------*/
+/*---------------------------------------------------*/
+.centre-ville{
+	margin-top: -1em;
+}
+
+
   .recherchebouton{
 	display: flex;
     align-items: center;
@@ -77,6 +84,8 @@ body{
 	border-radius: 0 1em 1em 0;
 	background-color:  #0065FC;
 	padding: .5em .5em;
+	font-weight: bold;
+	color:#F2F2F2 ;
 	
 	
   
@@ -90,27 +99,32 @@ input{
 .filtre{
 	display: flex;
     flex-wrap: wrap;
-	margin-bottom: 1em;
+	;
 	margin-top: 2em;
 	
 }
 .filtreh2{
 	display: flex;
     align-items: center;
-	margin-top: 0;
 	margin-right: 2em;
 	margin-bottom:1em;
-	margin-left: 0;   
+	  
 }
 
 .filtrebloc{
 	display: flex;
     align-items: center;
     margin-right: 2em;
-    border: 2px solid #d9d9d9;;
+    border: 2px solid #d9d9d9;
     border-radius: 2em;
     margin-bottom: 1em;
     
+
+}
+.filtrebloc:hover {
+	background-color:#d9d9d9 ;
+	font-style: italic;
+	cursor: pointer;
 
 }
 
@@ -122,33 +136,26 @@ input{
 	border-radius: 100%;
 	align-items: center;
 	justify-content: center;
-	margin-left: -.2em;
+	
 }
 
-.filtretitre{
-	display: flex;
+.filtretitre{	
 	margin-right: 1em;
 	margin-left: 1em;
 	font-weight: bold;
-
 }
 
 
- .fa-money-bill-wave,  .fa-child, .fa-heart, .fa-dog, .fa-info, .fa-star{
+.fa-money-bill-wave,  .fa-child, .fa-heart, .fa-dog, .fa-info, .fa-star{
 	color: #0065FC;
 }
-.fa-info{
-	border: solid 1px #d9d9d9;
-}
+
 .iconinfo{
-	display: flex;
-	
-	
+	display: flex;	
 	height: 1em;
 	width: 1em;
 	border-radius: 100%;
-	border: 1px solid #d9d9d9;
-	
+	border: 1px solid #d9d9d9;	
 	justify-content: center;
 	
 }
@@ -183,6 +190,7 @@ input{
 	flex-wrap:wrap;
 	flex-direction: row;
 	justify-content: space-around;
+	margin-left: 1em;
 	
 }
 
@@ -195,16 +203,15 @@ input{
 	height: 70%;
 	border-radius: 1em 1em 1em 1em;
 	border-color: black;
-	margin-left: -4em; /* ne sert a rien*/
+	margin-left: -3em; 
 
 }
 .marseille {
-	padding:0% 1%;
+	
 	background-color: white;
 	max-height: 235px;
 	width: 30%;
-	margin-bottom: 3%;
-
+	margin-bottom: 1em;
 	border-radius: 1em 1em 1em 1em;
 	box-shadow:  8px 8px 6px #F2F2F2;
 	
@@ -226,12 +233,11 @@ input{
 }
 .etoile{
 	margin-top: -.5em;
-	padding-bottom: 1em;
+	
 }
 .fas{
 	
 	font-size:15px;
-
 }
 
 
@@ -243,12 +249,9 @@ input{
 	width: 33%;
 	height: 85%;
 	border-radius: 1em 1em 1em 1em;
-	margin-bottom: 1em;
-
-
 }
 .pop{
-	padding:0% 1%;
+	
 	background-color: white;
 	height: 70%;
 	margin-bottom: 10%;
@@ -270,8 +273,9 @@ input{
 	object-fit: cover;
 }
 .fa-chart-line{
-	margin-left: 3em;
-	size: 20%;
+	
+	font-size: 30px;
+	margin-left: 1em;
 }
 
 .bloc-ecrituredroit{
@@ -285,11 +289,7 @@ input{
 	
 }
 
-.etoilepop{
-	
-	padding-left: 13em;
 
-}
 
 
 .etoile{
@@ -307,11 +307,8 @@ input{
 
 
 .grid> div{
-	
-	
-    border-radius: 1em;
+	  
 	background-color: white;
-
 
 }
 .grid{
@@ -321,15 +318,9 @@ input{
 	grid-template-rows: 1fr 1fr ;
 	column-gap: 2%;
 	row-gap: 5%;
-	margin-bottom: 3em; 
-	
-	
-		
-	
-	
-	
-   
+	margin-bottom: 3em;   
 }
+
 .children{
 	grid-column-start: 1;
 	grid-row-start: 1;
@@ -452,16 +443,15 @@ input{
 
 
 
-
-/*---------------FOOTER--------------*/
+/*----------------------------------------------------------------------*/
+/*---------------------------FOOTER------------------------------------*/
 
 .fin{
 	width: 100%;
-	
 	display: flex;
 	flex-direction:row;
 	justify-content: center;
-	align-items: flex-start;/* tous aligner en haut*/
+	align-items: flex-start;
 	font-size: 20px;
 	
 } 
@@ -485,6 +475,3 @@ li{
 	list-style-type: none;
 	
 }
-
-
-/*----------------------------------------------------------------------*/
