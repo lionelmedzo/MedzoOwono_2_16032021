@@ -3,6 +3,7 @@
     <head>
         <!-- Required meta tags -->
         <meta charset="utf-8">
+        <title>Reservia</title>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/384df6feb6.js" crossorigin="anonymous"></script>
@@ -14,37 +15,36 @@
     <body>
 
         <header>
-            <div class ="entete">
+            <div id ="entete">
                 <a href="images\logo\Reservia@3x.png">
-                <img class="logo" src="images\logo\Reservia@3xmini.png"/></a>
-                <nav class="menu">
+                <img id="logo" src="images\logo\Reservia@3xmini.png"/></a>
+                <nav id="menu">
                       
-                    <a class="lien1" href="#HEBERGEMENT">Hebergements</a>
-                    <a class="lien2" href="#ACTIVITE">Activités</a>
+                    <a id="lien1" href="#HEBERGEMENT">Hébergements</a>
+                    <a id="lien2" href="#ACTIVITE">Activités</a>
                 </nav>
-                <nav class="inscritpiton">                       
-                    <a class="lien3" href="#">S'inscrires</a>
+                <nav id="inscritpiton">                       
+                    <a id="lien3" href="#">S'inscrires</a>
                 </nav>    
             </div>
         </header>
 
         <div class="container ">
-            <div class="row">
                 <h1>Trouver votre hébergement pour des vacances de rêve</h1>
-  				<p class="centre-ville"> En plein centre ville ou en pleine nature </p>
-            </div>
+  				<p id="centre-ville"> En plein centre ville ou en pleine nature </p>
         </div>
-        <div class="recherchebouton">
-            <div class="search">
+
+        <div id="recherchebouton">
+            <div id="search">
                 <i class="fas fa-map-marker-alt"></i>
             </div>
-            <input type="text" placeholder="Marseille, France"   /><button class="bouton">Rechercher</button>
+            <input type="text" placeholder="Marseille, France"   /><button id="bouton">Rechercher</button>
         </div>
         
          
 
-        <div class ="filtre">
-            <h2 class="filtreh2"> Filtres</h2>
+        <div id ="filtre">
+            <h2 id="filtreh2"> Filtres</h2>
             <div class ="filtrebloc">
                 <div class="filtreimage">
                     <i class="fas fa-money-bill-wave"></i>
@@ -74,16 +74,16 @@
             </div>
         </div>
 
-        <div class="resultat">
-            <div class="iconinfo">
+        <div id="resultat">
+            <div id="iconinfo">
                 <i class="fas fa-info"></i>
             </div>
-            <p class="disponible">Plus de 500 logements sont disponibles dans cette ville</p>
+            <p id="disponible">Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
         
         <div class="contenaire">
             
-            <div class="hebergement" id ="HEBERGEMENT"><!-- conteneur 1--> 
+            <div id="hebergement" id ="HEBERGEMENT">
                 <h1 class ="rubrique">Hébergements à Marseille</h1>
                 <a class ="clicmarseille" href="#">            
                     <div class="marseille"> 
@@ -193,10 +193,10 @@
                         
                     </div>
                 </a>   
-                    <h3 class ="plus">Afficher plus</h3>            
+                    <h3 id ="plus">Afficher plus</h3>            
             </div>
 
-            <div class ="populaire"><!-- conteneur 2-->
+            <div id ="populaire">
                 <h1 class="rubrique">Les plus populaires
                     <i class="fas fa-chart-line"></i>
                 </h1>
@@ -259,62 +259,62 @@
 
         
         <h2 id="ACTIVITE">Activités à Marseille</h2>
-        <div class="grid" >
-            <a href="#" class="children"> 
+        <div id="grid" >
+            <a href="#" id="children"> 
                 <div class=activiteimage>
                     <img class="image1_3" src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"/>
                 </div>
-                <div class="titreactivite">
+                <div id="titreactivite">
                     <h3> Vieux Port</h3>
                 </div>
             </a>        
         
 
-            <a href="#" class="children2">               
-                <div class="activiteimage2">
-                    <img class="image2" src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"/>
+            <a href="#" id="children2">               
+                <div id="activiteimage2">
+                    <img id="image2" src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"/>
                 </div>
-                <div class="titreactivite2">
+                <div id="titreactivite2">
                     <h3> Fort de Pomègues</h3>
                 </div>
             </a>
             
             
-             <a href="#" class="children3">               
+             <a href="#" id="children3">               
                 <div class=activiteimage>
                     <img class="image1_3" src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"/>
                 </div>
-                <div class="titreactivite3">
+                <div id="titreactivite3">
                     <h3>Parc Nationale des Calanques</h3>
                 </div>
                 
             </a>
         
-            <a href="#" class="children4">                
-                <div class=activiteimage4>
-                    <img class="image4" src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"/>
+            <a href="#" id="children4">                
+                <div id=activiteimage4>
+                    <img id="image4" src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"/>
                 </div>
-                <div class="titreactivite4">
+                <div id="titreactivite4">
                     <h3> Notre-Dame-de-la-Garde</h3>
                 </div>
             </a>
             
             
-            <a href="#" class="children5">                
-                <div class=activiteimage5>
-                    <img class="image5" src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"/>
+            <a href="#" id="children5">                
+                <div id=activiteimage5>
+                    <img id="image5" src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"/>
                 </div>
-                <div class="titreactivite5">
+                <div id="titreactivite5">
                     <h3>Iles du Frioules</h3>
                 </div>
             </a>
             
         
-            <a href="#" class="children6">               
-                <div class=activiteimage6>
-                    <img class="image6" src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"/>
+            <a href="#" id="children6">               
+                <div id=activiteimage6>
+                    <img id="image6" src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"/>
                 </div>
-                <div class="titreactivite6">
+                <div id="titreactivite6">
                     <h3>Parc Longchamp</h3>
                 </div>
             </a>
@@ -327,7 +327,7 @@
 
        <footer>
         <div class="fin">
-            <div class="foot1">
+            <div id="foot1">
                 <h3 class="pied_de_page">A propos</h3>
                 <ul>
                     <li>Fonctionnement du site</li>
@@ -336,7 +336,7 @@
                 </ul>
             </div>
 
-            <div class="foot2">
+            <div id="foot2">
                 <h3 class="pied_de_page">Nos hebergements</h3>
                 <ul>
                     <li>Charte qualité</li>
@@ -344,7 +344,7 @@
                 </ul>
             </div>
 
-            <div class="foot3">
+            <div id="foot3">
                 <h3 class="pied_de_page">Assistance</h3>
                 <ul>
                     <li>Centre d'aide</li>
