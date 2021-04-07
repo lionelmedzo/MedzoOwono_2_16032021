@@ -236,16 +236,13 @@ input{
 
 }
 .marseille {
-	
 	background-color: white;
 	max-height: 235px;	
 	margin-bottom: 1em;
 	border-radius: 1em 1em 1em 1em;
 	box-shadow:  8px 8px 6px #F2F2F2;
-	
-	
-
 }
+
 .photo{
 	max-height: 50%;
 	width: 100%;
@@ -263,8 +260,7 @@ input{
 	margin-top: -.5em;
 	
 }
-.fas{
-	
+.fas{	
 	font-size:15px;
 }
 
