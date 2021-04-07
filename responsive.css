@@ -4,7 +4,7 @@
         grid-template-columns:1fr 2fr 1fr; 
         grid-template-rows: 1fr  1fr ;
         row-gap:2%;
-		margin-left: 1em;
+		
 		
 
     }
@@ -28,7 +28,9 @@
         grid-row-start: 1;
 		text-align: center;   
     }
-
+	#lien1{
+		margin-left: 1em;
+	}
 	
 
 	
