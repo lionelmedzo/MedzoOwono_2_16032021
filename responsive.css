@@ -19,8 +19,7 @@
         grid-row-start: 2;
 		grid-column-end: 3;
 		border-bottom:  2px solid #F2F2F2;
-		align-items: start;
-  		justify-content: space-between;
+		
 		
     }
     #inscritpiton{
@@ -28,9 +27,7 @@
         grid-row-start: 1;
 		text-align: center;   
     }
-	#lien1{
-		margin-left: 1em;
-	}
+	
 	
 
 	
