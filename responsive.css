@@ -15,15 +15,14 @@
         grid-column-start: 1;
         grid-column-end: span 2;
         grid-row-start: 2;
-        
-       
-
+		width: 100%;
+		border-bottom:  2px solid #F2F2F2;
     }
     #inscritpiton{
         grid-column-start: 3;
         grid-row-start: 1;
 		text-align: center;
-		margin-top: 1em;
+		margin-top: 3em;
         
     }
 	#lien2{
@@ -34,9 +33,25 @@
 	#recherchebouton{
 		padding-top: 1em;
 	}  
-
+	#lien1:hover, #lien2:hover{
+		color:#0065FC;
+		padding-bottom:.8em ;
+		border-bottom:2px solid #0065FC;
+		border-top: unset;
+	
+		
+    
+	}
     
 } 
+@media (max-width: 900px) {
+	#invisible{
+		display: none;
+	}
+	#loupe{
+		display:block;
+	}
+}
 
 
 @media (max-width: 900px) { 
@@ -118,7 +133,8 @@
   
   @media (max-width: 900px) {
       .rubrique {
-          text-align: center;
+          text-align: left;
+		  margin-left: 1em;
       }
       
   }

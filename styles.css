@@ -19,6 +19,7 @@ body{
 
 }
 #logo{
+	margin-top: 2em;
 	grid-column-start: 1;
 	grid-row-start: 1;
 }
@@ -26,31 +27,36 @@ body{
 #menu{
 	grid-column-start: 3;
 	grid-row-start: 1;
-	margin-top: 1em;
+	margin-top: 3em;
 
 }
 #inscritpiton{
 	grid-column-start: 4;
 	grid-row-start: 1;
-	margin-top: 1em;
+	margin-top: 3em;
 	
 }
 #lien1{
 	
-	padding: 2em;
+	margin-right: 5em;
+	padding-top: 1em;
+	text-decoration: none;
+	color: inherit;
+	text-decoration: #0065FC;
+	
+	
+}
+#lien2{
+	padding-top: 1em;
 	text-decoration: none;
 	color: inherit;
 	text-decoration: #0065FC;
 	
 }
-#lien2{
-	
-	text-decoration: none;
-	color: inherit;
-	text-decoration: #0065FC;
-	}
 #lien1:hover, #lien2:hover{
-	color:#0065FC
+	color:#0065FC;
+	
+	border-top:2px solid #0065FC;
 }
 #lien3{
 	
@@ -111,15 +117,15 @@ body{
 	padding: 1em 1em;
 	font-weight: bold;
 	color:#F2F2F2 ;
-	cursor: pointer;
-	
-	
-  
+	cursor: pointer; 
 }
 input{
 	min-height: 35px;
 	font-weight: bold;
 	border:none;
+}
+#loupe{
+	display:none
 }
 
 
@@ -305,19 +311,12 @@ input{
 
 .bloc-ecrituredroit{
 	margin-top: 1em;
-	
-	
-
 }
+
 .bloc-ecrituredroit p{
 	margin-top: -1em;
 	
 }
-
-
-
-
-
 .fa-star[data-etoile]{
 	color:#d9d9d9 ;
 }
@@ -341,105 +340,96 @@ input{
 
 
 .children{
-grid-column-start: 1;
-grid-row-start: 1;
-grid-row-end: span 2;
-height: 100%;
-box-shadow: 0 0 20px #0000002e;
-border-radius: 1rem;
-overflow: hidden;
-display: flex;
-flex-direction: column;
+	grid-column-start: 1;
+	grid-row-start: 1;
+	grid-row-end: span 2;
+	height: 100%;
+	box-shadow: 0 0 20px #0000002e;
+	border-radius: 1rem;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
 
 }
 .children2{
-grid-column-start: 2;
-grid-row-start:1;
-height: 100%;  
-box-shadow:  8px 8px 6px#F2F2F2;
-box-shadow: 0 0 20px #0000002e;
-border-radius: 1rem;
-overflow: hidden;
-display: flex;
-flex-direction: column;
+	grid-column-start: 2;
+	grid-row-start:1;
+	height: 100%;  
+	box-shadow:  8px 8px 6px#F2F2F2;
+	box-shadow: 0 0 20px #0000002e;
+	border-radius: 1rem;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
 }
 .children3{
-grid-column-start: 3;
-grid-row-start:1;
-grid-row-end: span 2;
-height: 100%;  
-box-shadow:  8px 8px 6px#F2F2F2;
-box-shadow: 0 0 20px #0000002e;
-border-radius: 1rem;
-overflow: hidden;
-display: flex;
-flex-direction: column;
+	grid-column-start: 3;
+	grid-row-start:1;
+	grid-row-end: span 2;
+	height: 100%;  
+	box-shadow:  8px 8px 6px#F2F2F2;
+	box-shadow: 0 0 20px #0000002e;
+	border-radius: 1rem;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
 }
 .children4{
-grid-column-start: 4;
-grid-row-start:1;
-height: 100%;  
-box-shadow:  8px 8px 6px#F2F2F2;
-box-shadow: 0 0 20px #0000002e;
-border-radius: 1rem;
-overflow: hidden;
-display: flex;
-flex-direction: column;
+	grid-column-start: 4;
+	grid-row-start:1;
+	height: 100%;  
+	box-shadow:  8px 8px 6px#F2F2F2;
+	box-shadow: 0 0 20px #0000002e;
+	border-radius: 1rem;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
 }
 .children5{
-grid-column-start: 2;
-grid-row-start:2;
-height: 100%;  
-box-shadow:  8px 8px 6px#F2F2F2;
-box-shadow: 0 0 20px #0000002e;
-border-radius: 1rem;
-overflow: hidden;
-display: flex;
-flex-direction: column;
+	grid-column-start: 2;
+	grid-row-start:2;
+	height: 100%;  
+	box-shadow:  8px 8px 6px#F2F2F2;
+	box-shadow: 0 0 20px #0000002e;
+	border-radius: 1rem;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
 }
 .children6{
-grid-column-start: 4;
-grid-row-start:2;
-height: 100%;  
-box-shadow:  8px 8px 6px#F2F2F2;
-box-shadow: 0 0 20px #0000002e;
-border-radius: 1rem;
-overflow: hidden;
-display: flex;
-flex-direction: column;
+	grid-column-start: 4;
+	grid-row-start:2;
+	height: 100%;  
+	box-shadow:  8px 8px 6px#F2F2F2;
+	box-shadow: 0 0 20px #0000002e;
+	border-radius: 1rem;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
 }
 
-
-
-
-
 a {
-color: inherit;
-text-decoration: none;
+	color: inherit;
+	text-decoration: none;
 }
 a {
-background-color: transparent;
+	background-color: transparent;
 }
 .activite_image {
-position: relative;
-flex: 1;
+	position: relative;
+	flex: 1;
 }
 
 .image {
-
-height: 100%;
-width: 100%;
-object-fit: cover;
-position: absolute;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	position: absolute;
 }
 
 .titre_activite {
-margin: 1em;
+	margin: 1em;
 }
-
-
-
-
 
 /*----------------------------------------------------------------------*/
 /*---------------------------FOOTER------------------------------------*/
@@ -450,26 +440,20 @@ margin: 1em;
 	flex-direction:row;
 	justify-content: center;
 	align-items: flex-start;
-	
-	
-	
+
 } 
 footer{		
 	width: 100%;
 	background:  #F2F2F2;	
 }
-
-
 #foot1, #foot2, #foot3{
 	width:33%;
 	
 }
-
 .pied_de_page{
 	margin-left: 2em;
 	font-size: 20px;
 }
-
 li{
 	list-style-type: none;
 	
