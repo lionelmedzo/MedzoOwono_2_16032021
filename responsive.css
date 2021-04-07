@@ -3,31 +3,34 @@
         display: grid;
         grid-template-columns:1fr 2fr 1fr; 
         grid-template-rows: 1fr  1fr ;
-        row-gap:20%;
-		padding-bottom: 1em;
+        row-gap:2%;
+		margin-left: 1em;
+		
 
     }
     #logo{
         grid-column-start: 1;
         grid-row-start: 1;
     }
+	
+	
     #menu{
-        grid-column-start: 1;
-        grid-column-end: span 2;
+        grid-column-start: 1;       
         grid-row-start: 2;
-		width: 100%;
+		grid-column-end: 3;
 		border-bottom:  2px solid #F2F2F2;
+		align-items: start;
+  		justify-content: space-between;
+		
     }
     #inscritpiton{
         grid-column-start: 3;
         grid-row-start: 1;
-		text-align: center;
-		margin-top: 3em;
-        
+		text-align: center;   
     }
-	#lien2{
-		margin-left: 1em;
-	}
+
+	
+
 	
     
 	#recherchebouton{
@@ -56,19 +59,15 @@
 
 @media (max-width: 900px) { 
 	#filtre{
-		flex-direction: column;
-		align-items: left;
-        
-		
+		display:flex;
+		flex-wrap: wrap;	
 	}
 
 	#filtreh2{
 		width: 100%;	
 		justify-content: left;
 	}
-	.filtrebloc{
-		width:50%;
-	}
+		
 }
 
 
@@ -102,7 +101,7 @@
 		  
       }
       .photopop{
-        max-height:300px ;
+        height:200px ;
         max-width: 50%;
         margin-left: .3em;
         object-fit: cover;

@@ -13,7 +13,7 @@ body{
 	display: grid;
 	grid-template-columns:1fr 2fr 2fr 1fr; 
 	grid-template-rows: 1fr;
-	padding: 0 2em;
+	margin-left: 2em;
 
 
 
@@ -22,11 +22,13 @@ body{
 	margin-top: 2em;
 	grid-column-start: 1;
 	grid-row-start: 1;
+	
 }
 
 #menu{
 	grid-column-start: 3;
 	grid-row-start: 1;
+
 	margin-top: 3em;
 
 }
@@ -139,7 +141,7 @@ input{
 }
 #filtreh2{
 	display: flex;
-    align-items: center;
+	flex-wrap: wrap;
 	margin-right: 2em;
 	margin-bottom:1em;
 	  
@@ -298,8 +300,6 @@ input{
 	height: 150px;
 	width: 40%;
 	float:left;
-	
-	
 	border-radius: 1em 0em 0em 1em;
 	object-fit: cover;
 }
