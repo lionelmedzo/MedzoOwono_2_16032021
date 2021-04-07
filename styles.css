@@ -1,4 +1,3 @@
-
 body{
 	
 	display: block;
@@ -321,11 +320,7 @@ input{
 
 
 
-.etoile{
-	display: flex;
-	flex-direction: row;
-	justify-content: left;
-}
+
 .fa-star[data-etoile]{
 	color:#d9d9d9 ;
 }
@@ -334,159 +329,117 @@ input{
 /*----------------------------------------------------------------------*/
 /*----------------------------Activité-----------------------------------*/
 
-
-.grid> a{
-	  
-	background-color: white;
-
-}
-#grid{
-    
-	display: grid;
-	grid-template-columns:1fr 1fr 1fr 1fr ; 
-	grid-template-rows: 1fr 1fr ;
-	column-gap: 2%;
-	row-gap: 5%;
-	margin-bottom: 3em;
-	padding: 0 2em;  
-}
-
-#children{
-	grid-column-start: 1;
-	grid-row-start: 1;
-	grid-row-end: span 2;
-	height: 100%;
-	box-shadow:  8px 8px 6px#F2F2F2; 	
-	text-decoration: none;
-	color: inherit;
-}
 #ACTIVITE{
 	padding:0 2em;
 }
-
-#children2{
-	grid-column-start: 2;
-	grid-row-start:1;
-	height: 100%;  
-	box-shadow:  8px 8px 6px#F2F2F2;  
-	text-decoration: none;
-	color: inherit; 
-}
-
-#children3{
-	grid-column-start: 3;
-	grid-row-start: 1;
-	grid-row-end: span 2;
-	box-shadow:  8px 8px 6px#F2F2F2; 
-	text-decoration: none;
-	color: inherit;
-}
-
-#children4{
-	grid-column-start: 4;
-	grid-row-start: 1;
-	height: auto;
-	box-shadow:  8px 8px 6px#F2F2F2; 
-	text-decoration: none;
-	color: inherit;
-}
-#children5{
-	grid-column-start:  2;
-	grid-row-start: 2;
-	height: auto;
-	box-shadow:  8px 8px 6px#F2F2F2;
-	text-decoration: none;
-	color: inherit; 
-}
-#children6{
-	grid-column-start: 4;
-	grid-row-start: 2;
-	height: auto;
-	box-shadow:  8px 8px 6px#F2F2F2; 
-	text-decoration: none;
-	color: inherit;
-}
-
-.activiteimage{   
-    height:80%;  
-	
-	
-}
-#activiteimage2{
-	height:80%;    	  
-}
-
-#activiteimage4{
-	height: 100%;	
-}
-
-#activiteimage5{
-	height: 100%;	
-}
-
-#activiteimage6{
-	height: 100%;
+.grid {
+	display: grid;
+	row-gap: 2rem;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows:  12em 12em;
+	column-gap: 2%;
+	padding: 0 2em;
+	margin-bottom: 2em;
 }
 
 
-.image1_3{
-    height: 110%;
-    width: 100%;   
-    object-fit:cover ;
-    border-radius: 1em 1em 0 0;   
-	
+.children{
+grid-column-start: 1;
+grid-row-start: 1;
+grid-row-end: span 2;
+height: 100%;
+box-shadow: 0 0 20px #0000002e;
+border-radius: 1rem;
+overflow: hidden;
+display: flex;
+flex-direction: column;
+
+}
+.children2{
+grid-column-start: 2;
+grid-row-start:1;
+height: 100%;  
+box-shadow:  8px 8px 6px#F2F2F2;
+box-shadow: 0 0 20px #0000002e;
+border-radius: 1rem;
+overflow: hidden;
+display: flex;
+flex-direction: column;
+}
+.children3{
+grid-column-start: 3;
+grid-row-start:1;
+grid-row-end: span 2;
+height: 100%;  
+box-shadow:  8px 8px 6px#F2F2F2;
+box-shadow: 0 0 20px #0000002e;
+border-radius: 1rem;
+overflow: hidden;
+display: flex;
+flex-direction: column;
+}
+.children4{
+grid-column-start: 4;
+grid-row-start:1;
+height: 100%;  
+box-shadow:  8px 8px 6px#F2F2F2;
+box-shadow: 0 0 20px #0000002e;
+border-radius: 1rem;
+overflow: hidden;
+display: flex;
+flex-direction: column;
+}
+.children5{
+grid-column-start: 2;
+grid-row-start:2;
+height: 100%;  
+box-shadow:  8px 8px 6px#F2F2F2;
+box-shadow: 0 0 20px #0000002e;
+border-radius: 1rem;
+overflow: hidden;
+display: flex;
+flex-direction: column;
+}
+.children6{
+grid-column-start: 4;
+grid-row-start:2;
+height: 100%;  
+box-shadow:  8px 8px 6px#F2F2F2;
+box-shadow: 0 0 20px #0000002e;
+border-radius: 1rem;
+overflow: hidden;
+display: flex;
+flex-direction: column;
 }
 
 
 
-#image2{      
-	width: 100%;
-	height: 200px;
-	object-fit: cover; 
-	border-radius: 1em 1em 0 0;	
-	
+
+
+a {
+color: inherit;
+text-decoration: none;
 }
-#image4{
-	width: 100%;
-	height: 80%;
-	object-fit: cover; 
-	border-radius: 1em 1em 0 0;
-	justify-items: center;
-	
+a {
+background-color: transparent;
+}
+.activite_image {
+position: relative;
+flex: 1;
 }
 
-#image5{
-	width: 100%;
-	height: 75%;
-	object-fit: cover; 
-	border-radius: 1em 1em 0 0;
-	justify-items: center;
-	
+.image {
+
+height: 100%;
+width: 100%;
+object-fit: cover;
+position: absolute;
 }
 
-#image6{   
-    
-	width: 100%;
-	height: 75%;
-	object-fit: cover; 
-	border-radius: 1em 1em 0 0;
-	
-	
-}
-#titreactivite{
-	margin-top: 3em;
+.titre_activite {
+margin: 1em;
 }
 
-#titreactivite2 {
-	margin-top: -1em;
-}
-
-#titreactivite4,#titreactivite5,#titreactivite6{
-	margin-top:-4em ;
-}
-#titreactivite3 {
-	margin-top:3em;
-}
 
 
 
