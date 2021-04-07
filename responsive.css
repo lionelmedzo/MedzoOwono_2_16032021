@@ -17,7 +17,7 @@
     #menu{
         grid-column-start: 1;       
         grid-row-start: 2;
-		grid-column-end: 3;
+		grid-column-end: span 3;
 		border-bottom:  2px solid #F2F2F2;
 		
 		
@@ -26,7 +26,9 @@
         grid-column-start: 3;
         grid-row-start: 1;
 		text-align: center;   
-    }
+    }#lien1{
+		margin-left: 2em;
+	}
 	
 	
 
